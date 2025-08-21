@@ -1,6 +1,6 @@
 <div align="center">
 
-# Weather Menu Recommender
+# 오늘 뭐 먹지?
 
 ### 날씨별 메뉴 추천 웹 애플리케이션 🍽️
 
