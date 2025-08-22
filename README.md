@@ -104,27 +104,37 @@ npm run dev
 ## 🗂 프로젝트 구조
 
 ```
-src/
-├── app/
-│   └── store.js              # Redux store 설정
-├── features/
-│   ├── weather/
-│   │   ├── weatherSlice.js   # 날씨 상태 관리
-│   │   ├── WeatherSelector.jsx
-│   │   └── index.js
-│   ├── menu/
-│   │   ├── menuSlice.js      # 메뉴 추천 로직
-│   │   ├── MenuRecommender.jsx
-│   │   ├── menuData.js       # 날씨별 메뉴 데이터
-│   │   └── index.js
-│   └── history/
-│       ├── historySlice.js   # 히스토리 관리
-│       ├── HistoryList.jsx
-│       └── index.js
-├── utils/
-│   └── localStorage.js       # localStorage 헬퍼 함수
-├── App.jsx
-└── main.jsx
+weather-menu-recommender/
+├── src/
+│   ├── App.jsx                    # 메인 애플리케이션
+│   ├── main.jsx                   # 애플리케이션 진입점
+│   ├── index.css                  # Tailwind CSS 설정 완료
+│   ├── app/
+│   │   └── store.js               # Redux store 기본 구조
+│   ├── features/                  # 기능별 폴더
+│   │   ├── weather/               
+│   │   │   ├── weatherSlice.js    
+│   │   │   ├── WeatherSelector.jsx 
+│   │   │   └── index.js
+│   │   ├── temperature/           
+│   │   │   ├── temperatureSlice.js 
+│   │   │   ├── TemperatureSelector.jsx 
+│   │   │   └── index.js
+│   │   ├── menu/                  
+│   │   │   ├── menuSlice.js       
+│   │   │   ├── MenuRecommender.jsx 
+│   │   │   └── index.js
+│   │   └── history/              
+│   │       ├── historySlice.js    
+│   │       ├── HistoryList.jsx    
+│   │       └── index.js
+│   └── utils/                     
+│       └── localStorage.js        
+├── public/                        # 정적 파일들
+├── postcss.config.js              # PostCSS 설정 (Tailwind 포함)
+├── tailwind.config.js             # Tailwind 설정 (프로젝트 색상 테마 포함)
+├── package.json                   # 모든 의존성 설치 완료
+└── README.md
 ```
 
 <br />
