@@ -1,7 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit'
+import weatherSlice from './features/weather/weatherSlice'
+import temperatureSlice from './features/temperature/temperatureSlice'
+import menuSlice from './features/menu/menuSlice'
+import historySlice from './features/history/historySlice'
 
 export const store = configureStore({
-  reducer: {
-    // TODO: 팀원들이 slice를 작성하면 여기에 추가
-  },
-});
+    reducer: {
+        weather: weatherSlice,
+        temperature: temperatureSlice,
+        menu: menuSlice,
+        history: historySlice,
+    },
+})

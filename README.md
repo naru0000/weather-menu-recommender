@@ -147,17 +147,16 @@ src/
 
 ## 👥 프로젝트 팀원
 
-|                   Redux 설정                    |                날씨 & 메뉴 기능                 |                  히스토리 & UI                  |
+|                 날씨 선택 기능                  |                날씨 & 메뉴 기능                 |                  히스토리 & UI                  |
 | :---------------------------------------------: | :---------------------------------------------: | :---------------------------------------------: |
 | ![](https://github.com/username-a.png?size=120) | ![](https://github.com/username-b.png?size=120) | ![](https://github.com/username-c.png?size=120) |
 |     [팀원 A](https://github.com/username-a)     |     [팀원 B](https://github.com/username-b)     |     [팀원 C](https://github.com/username-c)     |
-|              `feature/redux-setup`              |             `feature/weather-menu`              |              `feature/history-ui`               |
 
 ### 역할 분담
 
-- **팀원 A**: Redux store 설정, slice 템플릿 제공, 팀원 가이드 문서 작성
-- **팀원 B**: weatherSlice, menuSlice, 날씨별 메뉴 데이터 관리
-- **팀원 C**: historySlice, localStorage 연동, 전체 UI 구현
+- **팀원 A**: weatherSlice 작성, WeatherSelector 컴포넌트, 날씨별 배경 변경 로직
+- **팀원 B**: temperatureSlice, menuSlice 작성, TemperatureSelector, MenuRecommender 컴포넌트, 날씨+온도 조합별 메뉴 데이터와 추천 로직
+- **팀원 C**: historySlice 작성 및 Redux store 설정, HistoryList 컴포넌트, localStorage 연동, 전체 App.jsx 통합 및 스타일링
 
 <br />
 
