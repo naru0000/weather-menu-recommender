@@ -1,0 +1,39 @@
+{
+    "weather": {
+        "cloudy": [
+            {
+                "name": "김치찌개",
+                "description": "얼큰하고 따뜻한 김치찌개",
+                "image": "kimchi-jjigae.jpg"
+            },
+            {
+                "name": "된장찌개",
+                "description": "구수한 된장찌개",
+                "image": "doenjang-jjigae.jpg"
+            }
+        ],
+        "rainy": [
+            {
+                "name": "파전",
+                "description": "비오는 날엔 파전이지!",
+                "image": "pajeon.jpg"
+            }
+        ],
+        "sunny": [
+            {
+                "name": "냉면",
+                "description": "시원한 냉면으로 더위 날리기",
+                "image": "naengmyeon.jpg"
+            }
+        ]
+    },
+    "temperature": {
+        "cold": ["김치찌개", "국밥", "라면"],
+        "hot": ["냉면", "빙수", "샐러드"]
+    },
+    "combination": {
+        "cloudyCold": ["김치찌개", "된장찌개"],
+        "rainyCold": ["파전", "라면"],
+        "sunnyHot": ["냉면", "빙수"]
+    }
+}
