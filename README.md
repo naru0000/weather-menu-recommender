@@ -105,9 +105,8 @@ npm run dev
 
 ```
 weather-menu-recommender/
-weather-menu-recommender/
 ├── src/
-│   ├── App.jsx                    # 메인 애플리케이션 (시안 기반 HTML 구조 완성)
+│   ├── App.jsx                    # 메인 애플리케이션
 │   ├── main.jsx                   # 애플리케이션 진입점
 │   ├── index.css                  # Tailwind CSS 설정 완료
 │   ├── app/
@@ -121,6 +120,7 @@ weather-menu-recommender/
 │   │   │   └── TemperatureSelector.jsx 
 │   │   ├── menu/                  
 │   │   │   ├── menuSlice.js       
+│   │   │   ├── menuData.js        # 메뉴 데이터
 │   │   │   └── MenuRecommender.jsx 
 │   │   └── history/               
 │   │       ├── historySlice.js    
