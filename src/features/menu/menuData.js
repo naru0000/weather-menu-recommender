@@ -1,5 +1,38 @@
 export const menuData = {
-    cold: ['김치찌개', '된장찌개', '순두부찌개'],
-    hot: ['냉면', '냉국수', '샐러드'],
-    rain: ['파전', '치킨', '떡볶이'],
+    blur: {
+        // 흐린날
+        cold: [
+            { food: '순두부찌개', image: '/images/sundubu.jpg' },
+            { food: '제육볶음', image: '/images/jeyuk.jpg' },
+            // ...
+        ],
+        hot: [
+            { food: '냉면', image: '/images/naengmyeon.jpg' },
+            // ...
+        ],
+    },
+    sun: {
+        // 햇빛쨍쨍한날
+        cold: [
+            { food: '순두부찌개', image: '/images/sundubu.jpg' },
+            { food: '제육볶음', image: '/images/jeyuk.jpg' },
+            // ...
+        ],
+        hot: [
+            { food: '냉면', image: '/images/naengmyeon.jpg' },
+            // ...
+        ],
+    },
+    rain: {
+        // 비오는날
+        cold: [
+            { food: '순두부찌개', image: '/images/sundubu.jpg' },
+            { food: '제육볶음', image: '/images/jeyuk.jpg' },
+            // ...
+        ],
+        hot: [
+            { food: '냉면', image: '/images/naengmyeon.jpg' },
+            // ...
+        ],
+    },
 }
