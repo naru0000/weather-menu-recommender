@@ -1,39 +1,135 @@
-{
-    "weather": {
-        "cloudy": [
-            {
-                "name": "김치찌개",
-                "description": "얼큰하고 따뜻한 김치찌개",
-                "image": "kimchi-jjigae.jpg"
-            },
-            {
-                "name": "된장찌개",
-                "description": "구수한 된장찌개",
-                "image": "doenjang-jjigae.jpg"
-            }
-        ],
-        "rainy": [
-            {
-                "name": "파전",
-                "description": "비오는 날엔 파전이지!",
-                "image": "pajeon.jpg"
-            }
-        ],
-        "sunny": [
-            {
-                "name": "냉면",
-                "description": "시원한 냉면으로 더위 날리기",
-                "image": "naengmyeon.jpg"
-            }
-        ]
+[
+    {
+        "id": 1,
+        "name": "낫또",
+        "weather": ["cloudy", "sunny", "rainy", "snowy"],
+        "temperature": ["cold", "hot"],
+        "category": ["japanese", "korean", "chinese", "snack", "western"]
     },
-    "temperature": {
-        "cold": ["김치찌개", "국밥", "라면"],
-        "hot": ["냉면", "빙수", "샐러드"]
+    {
+        "id": 2,
+        "name": "순두부찌개",
+        "weather": ["cloudy", "rainy"],
+        "temperature": ["cold"],
+        "category": ["korean"]
     },
-    "combination": {
-        "cloudyCold": ["김치찌개", "된장찌개"],
-        "rainyCold": ["파전", "라면"],
-        "sunnyHot": ["냉면", "빙수"]
+    {
+        "id": 3,
+        "name": "제육볶음",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean"]
+    },
+    {
+        "id": 4,
+        "name": "찜닭",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean"]
+    },
+    {
+        "id": 5,
+        "name": "냉면",
+        "weather": ["sunny"],
+        "temperature": ["hot"],
+        "category": ["korean"]
+    },
+    {
+        "id": 6,
+        "name": "콩국수",
+        "weather": ["sunny"],
+        "temperature": ["hot"],
+        "category": ["korean"]
+    },
+    {
+        "id": 7,
+        "name": "냉우동",
+        "weather": ["sunny"],
+        "temperature": ["hot"],
+        "category": ["japanese", "korean"]
+    },
+    {
+        "id": 8,
+        "name": "된장찌개",
+        "weather": ["cloudy", "rainy"],
+        "temperature": ["cold"],
+        "category": ["korean"]
+    },
+    {
+        "id": 9,
+        "name": "김밥",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean", "snack"]
+    },
+    {
+        "id": 10,
+        "name": "돈까스",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["japanese", "korean", "snack"]
+    },
+    {
+        "id": 11,
+        "name": "회덮밥",
+        "weather": ["sunny", "cloudy"],
+        "temperature": ["hot"],
+        "category": ["korean", "japanese"]
+    },
+    {
+        "id": 12,
+        "name": "치킨",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean", "snack"]
+    },
+    {
+        "id": 13,
+        "name": "냉모밀",
+        "weather": ["sunny"],
+        "temperature": ["hot"],
+        "category": ["japanese"]
+    },
+    {
+        "id": 14,
+        "name": "파전",
+        "weather": ["rainy", "cloudy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean", "snack"]
+    },
+    {
+        "id": 15,
+        "name": "짬뽕",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["chinese", "korean"]
+    },
+    {
+        "id": 16,
+        "name": "우동",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["japanese"]
+    },
+    {
+        "id": 17,
+        "name": "피자",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["snack", "western"]
+    },
+    {
+        "id": 18,
+        "name": "삼겹살",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["korean"]
+    },
+    {
+        "id": 19,
+        "name": "햄버거",
+        "weather": ["cloudy", "sunny", "rainy"],
+        "temperature": ["cold", "hot"],
+        "category": ["snack", "western"]
     }
-}
+]
