@@ -1,4 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
+import {
+    loadHistory,
+    saveHistory,
+    clearHistory,
+} from '../../utils/localStorage'
 
 // TODO: 추천 히스토리를 위한 Redux slice를 만들어보세요
 //
