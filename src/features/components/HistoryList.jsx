@@ -1,8 +1,8 @@
 // HistoryList.jsx
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { addHistory, removeHistory, resetHistory } from '../slice/historySlice'
+import { removeHistory, resetHistory } from '../slice/historySlice'
 import { saveHistory } from '../../utils/localStorage'
 
 function HistoryList() {
@@ -10,14 +10,10 @@ function HistoryList() {
 
     const dispatch = useDispatch()
 
-    // 테스트용 함수들
-    const handleAddTest = () => {
-        const testData = {
-            menu: '김치찌개',
-            time: new Date().toLocaleTimeString(),
-        }
-        dispatch(addHistory(testData))
-    }
+    // 로컬스토리지 저장
+    useEffect(() => {
+        saveHistory(historyData)
+    }, [historyData])
 
     const handleRemove = (index) => {
         dispatch(removeHistory(index))
@@ -31,7 +27,6 @@ function HistoryList() {
         <section>
             <h2>추천받은 기록</h2>
             <div>
-                <button onClick={handleAddTest}>테스트 추가</button>
                 <button onClick={handleReset}>전체 삭제</button>
             </div>
             <ul>
