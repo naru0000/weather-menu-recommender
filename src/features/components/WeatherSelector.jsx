@@ -1,8 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { setWeather } from '../slice/weatherSlice'
 
-const WEATHER = ['Sunny', 'Rainy', 'Cloudy']
-
+const WEATHER = ['rainy', 'cloudy', 'sunny']
 function Weather() {
     const dispatch = useDispatch()
     const currentWeather = useSelector((state) => state.weather.value)
