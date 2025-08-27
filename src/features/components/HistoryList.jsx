@@ -10,7 +10,7 @@ function HistoryList() {
 
     const dispatch = useDispatch()
 
-    // 로컬스토리지 저장
+    // 로컬스토리지 자동 저장
     useEffect(() => {
         saveHistory(historyData)
     }, [historyData])
