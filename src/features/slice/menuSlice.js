@@ -8,7 +8,7 @@ const menuSlice = createSlice({
         recommended: false,
     },
     reducers: {
-        recommended: (state, action) => {
+        recommendedMenu: (state, action) => {
             const { weather, temperature } = action.payload
 
             const filtered = menuData.filter((menu) => {
@@ -28,6 +28,6 @@ const menuSlice = createSlice({
     },
 })
 
-export const { recommended } = menuSlice.actions
+export const { recommendedMenu } = menuSlice.actions
 
-export default menuSlice
+export default menuSlice.reducer
