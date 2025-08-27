@@ -1,10 +1,32 @@
+import { useDispatch, useSelector } from 'react-redux'
+import { setWeather } from '../slice/weatherSlice'
+
+const WEATHER = ['Sunny', 'Rainy', 'Cloudy']
+
 function Weather() {
+    const dispatch = useDispatch()
+    const currentWeather = useSelector((state) => state.weather.value)
+
     return (
-        <>
-            <button>Sunny</button>
-            <button>Rainy</button>
-            <button>Cloudy</button>
-        </>
+        <div>
+            <div>
+                {WEATHER.map((temp) => (
+                    <button
+                        key={temp}
+                        onClick={() => dispatch(setWeather(temp))}
+                        style={{
+                            backgroundColor:
+                                currentWeather === temp ? 'lightblue' : 'white',
+                            border: '1px solid black',
+                            borderRadius: 100,
+                            cursor: 'pointer',
+                        }}
+                    >
+                        {temp}
+                    </button>
+                ))}
+            </div>
+        </div>
     )
 }
 
