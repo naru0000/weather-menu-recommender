@@ -6,3 +6,15 @@ import { createSlice } from '@reduxjs/toolkit'
 // 1. 온도 옵션은 어떤 것들이 있을까요? (추운날, 더운날)
 // 2. 초기 상태 설계
 // 3. 필요한 액션들 정의
+
+const temperatureSlice = createSlice({
+    name: 'temperature',
+    initialState: { value: 'hot' },
+    reducers: {
+        setTemperature: (state, action) => {
+            state.value = action.payload
+        },
+    },
+})
+export const { setTemperature } = temperatureSlice.actions
+export default temperatureSlice.reducer
