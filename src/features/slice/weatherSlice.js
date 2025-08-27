@@ -10,3 +10,19 @@ import { createSlice } from '@reduxjs/toolkit'
 // createSlice 문서: https://redux-toolkit.js.org/api/createSlice
 
 // 여기서부터 직접 작성해보세요!
+
+// src/features/slice/weatherSlice.js
+
+const weatherSlice = createSlice({
+    name: 'weather',
+    initialState: { value: 'sunny' },
+    reducers: {
+        setWeather: (state, action) => {
+            state.value = action.payload
+        },
+    },
+})
+
+export const { setWeather } = weatherSlice.actions
+
+export default weatherSlice.reducer
