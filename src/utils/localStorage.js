@@ -1,11 +1,22 @@
 const STORAGE_KEY = 'weather-menu-history'
 
-// TODO: localStorage에 히스토리를 저장하는 함수
+// 히스토리를 저장하는 함수
 export const saveHistory = (history) => {
-    // 힌트: JSON.stringify 사용
+    const saveData = JSON.stringify(history)
+    localStorage.setItem(STORAGE_KEY, saveData)
 }
 
-// TODO: localStorage에서 히스토리를 불러오는 함수
+// 히스토리를 불러오는 함수
 export const loadHistory = () => {
-    // 힌트: JSON.parse 사용, try-catch로 에러 처리
+    const loadData = localStorage.getItem(STORAGE_KEY)
+    if (loadData === null) {
+        return []
+    } else {
+        return JSON.parse(loadData)
+    }
+}
+
+// 히스토리 삭제 함수
+export const clearHistory = () => {
+    localStorage.removeItem(STORAGE_KEY)
 }
