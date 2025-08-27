@@ -13,13 +13,12 @@ function Weather() {
                     <button
                         key={temp}
                         onClick={() => dispatch(setWeather(temp))}
-                        style={{
-                            backgroundColor:
-                                currentWeather === temp ? 'lightblue' : 'white',
-                            border: '1px solid black',
-                            borderRadius: 100,
-                            cursor: 'pointer',
-                        }}
+                        className={`p-2 px-4 m-1 border border-gray-300 rounded-full cursor-pointer transition-colors 
+                            ${
+                                currentWeather === temp
+                                    ? 'bg-blue-500 text-white'
+                                    : 'bg-white text-black'
+                            }`}
                     >
                         {temp}
                     </button>
