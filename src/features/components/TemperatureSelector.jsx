@@ -7,25 +7,25 @@ const TEMPERATURES = [
 ]
 
 const weatherButtonColorClasses = {
-    null : "bg-weather-basic text-black",
-    sunny: "bg-weather-sunny text-black",
-    cloudy: "bg-weather-cloudy text-black",
-    rainy: "bg-weather-rainy text-black",
+    null: 'bg-gray-500 text-white',
+    sunny: 'bg-weather-sunny text-white',
+    cloudy: 'bg-weather-cloudy text-white',
+    rainy: 'bg-weather-rainy text-white',
 }
 
 function Temperature() {
     const dispatch = useDispatch()
     const currentTemperature = useSelector((state) => state.temperature.value)
-    const currentWeather = useSelector((state)=> state.weather.value)
+    const currentWeather = useSelector((state) => state.weather.value)
 
     return (
         <div>
             <div>
-                {TEMPERATURES.map(({key,label}) => (
+                {TEMPERATURES.map(({ key, label }) => (
                     <button
                         key={key}
                         onClick={() => dispatch(setTemperature(key))}
-                        className={`p-2 px-4 m-1 border border-gray-300 rounded-full cursor-pointer transition-colors font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]
+                        className={`p-2 px-4 m-1 border border-gray-300 rounded-full cursor-pointer transition-colors font-cafe24 
                             ${
                                 currentTemperature === key
                                     ? weatherButtonColorClasses[currentWeather]

@@ -2,11 +2,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { recommendedMenu } from '../slice/menuSlice'
 
 const textColorClasses = {
-    sunny: "text-weather-sunny",
-    cloudy: "text-weather-cloudy",
-    rainy: "text-weather-rainy",
+    sunny: 'text-weather-sunny',
+    cloudy: 'text-weather-cloudy',
+    rainy: 'text-weather-rainy',
 }
-
 
 function Menu() {
     const dispatch = useDispatch()
@@ -24,7 +23,11 @@ function Menu() {
 
     return (
         <section>
-            <h2 className={`${textColorClasses[weather] || "text-weather-basic"} font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]`}>오늘 뭐 먹지?</h2>
+            <h2
+                className={`${textColorClasses[weather] || 'text-weather-basic'} font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]`}
+            >
+                오늘 뭐 먹지?
+            </h2>
             <button onClick={handleRecommend}>
                 {random ? `${random.name}` : '추천 받기'}
             </button>
