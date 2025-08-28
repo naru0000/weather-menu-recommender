@@ -9,7 +9,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const temperatureSlice = createSlice({
     name: 'temperature',
-    initialState: { value: 'hot' },
+    initialState: { value: null },
     reducers: {
         setTemperature: (state, action) => {
             state.value = action.payload

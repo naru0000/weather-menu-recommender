@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { setTemperature } from '../slice/temperatureSlice'
 
-const TEMPERATURES = ['cold', 'cool', 'warm', 'hot']
+const TEMPERATURES = ['cold','hot']
 
 function Temperature() {
     const dispatch = useDispatch()

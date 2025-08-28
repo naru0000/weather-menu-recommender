@@ -15,11 +15,13 @@ function App() {
     const backgroundImageClass = backgroundClasses[weather];
 
     return (
-        <div className={`bg-cover bg-center min-h-screen ${backgroundImageClass}`}>
-            <Weather />
-            <Temperature />
-            <Menu />
-            <HistoryList />
+        <div className={`bg-cover bg-center min-h-screen w-full min-h-screen flex items-center justify-center py-10 ${backgroundImageClass}`}>
+            <main className="container mx-auto flex flex-col items-center">
+                <Weather />
+                <Temperature />
+                <Menu />
+                <HistoryList />
+            </main>
         </div>
     )
 }
