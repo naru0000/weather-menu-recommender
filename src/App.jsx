@@ -6,10 +6,14 @@ import HistoryList from './features/components/HistoryList'
 function App() {
     return (
         <>
-            <Weather />
-            <Temperature />
-            <Menu />
-            <HistoryList />
+            <div className="w-full min-h-screen bg-gray-300 flex items-center justify-center py-10">
+                <main className="container mx-auto flex flex-col items-center">
+                    <Weather />
+                    <Temperature />
+                    <Menu />
+                    <HistoryList />
+                </main>
+            </div>
         </>
     )
 }
