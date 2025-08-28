@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'sunny': "url('/src/assets/images/background/sunny.png')",
+        'cloudy': "url('/src/assets/images/background/cloudy.jpg')",       
+      },
       colors: {
         'weather-cold': '#3B82F6',
         'weather-hot': '#EF4444', 
