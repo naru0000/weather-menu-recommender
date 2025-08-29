@@ -5,9 +5,10 @@ import HistoryList from './features/components/HistoryList'
 import { useSelector } from 'react-redux'
 
 const backgroundClasses = {
+    null: 'bg-null',
     sunny: 'bg-sunny',
     cloudy: 'bg-cloudy',
-    rainy: 'bg-weather-rainy',
+    rainy: 'bg-rainy',
 }
 
 function App() {

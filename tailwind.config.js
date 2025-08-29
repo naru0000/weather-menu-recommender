@@ -4,8 +4,11 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                sunny: "url('/src/assets/images/background/sunny.png')",
-                cloudy: "url('/src/assets/images/background/cloudy.jpg')",
+                null: "url('/src/assets/images/background/basic-pc.png')",
+                sunny: "url('/src/assets/images/background/sunny-pc.png')",
+                cloudy: "url('/src/assets/images/background/cloudy-pc.png')",
+                rainy: "url('/src/assets/images/background/rainy-pc.png')",
+                
             },
             colors: {
                 'weather-basic': '#D4142A',
