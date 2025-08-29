@@ -12,38 +12,42 @@ function Menu() {
 
     const weather = useSelector((state) => state.weather.value)
     const temperature = useSelector((state) => state.temperature.value)
-    const { random, recommended } = useSelector((state) => state.menu) || {}
+    const { random } = useSelector((state) => state.menu)
 
     const handleRecommend = () => {
         dispatch(recommendedMenu({ weather, temperature }))
     }
-    console.log(weather)
-    console.log(temperature)
-    console.log(random)
 
+    console.log(random)
     return (
-        <section>
+        <section className="text-center">
             <h2
-                className={`${textColorClasses[weather] || 'text-weather-basic'} font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]`}
+                className={`${textColorClasses[weather] || 'text-weather-basic'} m-6 text-7xl font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]`}
             >
                 오늘 뭐 먹지?
             </h2>
-            <button onClick={handleRecommend}>
-                {random ? `${random.name}` : '추천 받기'}
-            </button>
-            {!recommended && <p>?</p>}
-            {recommended && (
-                <>
-                    <p>
-                        {random ? (
-                            <img src="/" alt={random.name} />
-                        ) : (
-                            '해당하는 음식이 없습니다 😢'
-                        )}
+
+            {random && (
+                <div className="">
+                    <img
+                        className="rounded-full mx-auto "
+                        src={random.src}
+                        alt={random.name}
+                    />
+                    <p
+                        className={`${textColorClasses[weather] || 'text-weather-basic'} m-6 text-4xl font-cafe24 [-webkit-text-stroke:1px_#FFFFFF]`}
+                    >
+                        {random.name}
                     </p>
-                    <button onClick={handleRecommend}>다시 추천 받기</button>
-                </>
+                </div>
             )}
+
+            <button
+                onClick={handleRecommend}
+                className="p-4 px-5 m-1 border border-gray-300 rounded-full text-4xl bg-white cursor-pointer font-cafe24 "
+            >
+                {random ? '다시 추천 받기' : '추천 받기'}
+            </button>
         </section>
     )
 }
