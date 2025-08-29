@@ -21,7 +21,7 @@ const menuSlice = createSlice({
             })
 
             const randomIndex = Math.floor(Math.random() * filtered.length)
-            state.random = filtered[randomIndex] || null
+            state.random = filtered[randomIndex]
 
             state.recommended = true
         },

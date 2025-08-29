@@ -4,7 +4,8 @@
         "name": "낫또",
         "weather": ["cloudy", "sunny", "rainy", "snowy"],
         "temperature": ["cold", "hot"],
-        "category": ["japanese", "korean", "chinese", "snack", "western"]
+        "category": ["japanese", "korean", "chinese", "snack", "western"],
+        "src": "/src/assets/images/foods/natto.png"
     },
     {
         "id": 2,

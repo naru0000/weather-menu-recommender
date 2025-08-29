@@ -7,19 +7,25 @@ import { useSelector } from 'react-redux'
 const backgroundClasses = {
     sunny: 'bg-sunny',
     cloudy: 'bg-cloudy',
-    rainy: 'bg-weather-rain',
-};
+    rainy: 'bg-weather-rainy',
+}
 
 function App() {
     const weather = useSelector((state) => state.weather.value)
-    const backgroundImageClass = backgroundClasses[weather];
+    const backgroundImageClass = backgroundClasses[weather]
 
     return (
-        <div className={`bg-cover bg-center min-h-screen ${backgroundImageClass}`}>
-            <Weather />
-            <Temperature />
-            <Menu />
-            <HistoryList />
+        <div className={`bg-cover bg-center ${backgroundImageClass}`}>
+            <div
+                className={`min-h-screen w-full min-h-screen flex items-center justify-center py-10 bg-white/40 `}
+            >
+                <main className="container mx-auto flex flex-col items-center">
+                    <Weather />
+                    <Temperature />
+                    <Menu />
+                    <HistoryList />
+                </main>
+            </div>
         </div>
     )
 }
