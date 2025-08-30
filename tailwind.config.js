@@ -4,16 +4,15 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                null: "url('/src/assets/images/background/basic-pc.png')",
-                sunny: "url('/src/assets/images/background/sunny-pc.png')",
-                cloudy: "url('/src/assets/images/background/cloudy-pc.png')",
-                rainy: "url('/src/assets/images/background/rainy-pc.png')",
-                
+                null: "url('/src/assets/images/background/basic-pc.jpg')",
+                sunny: "url('/src/assets/images/background/sunny-pc.jpg')",
+                cloudy: "url('/src/assets/images/background/cloudy-pc.jpg')",
+                rainy: "url('/src/assets/images/background/rainy-pc.jpg')",
             },
             colors: {
-                'weather-basic': '#D4142A',
-                'weather-cloudy': '#205B72',
-                'weather-sunny': '#0088CC',
+                'weather-basic': '#FF3888',
+                'weather-cloudy': '#203D56',
+                'weather-sunny': '#006FD8',
                 'weather-rainy': '#0F7461',
             },
             foodImages: {
