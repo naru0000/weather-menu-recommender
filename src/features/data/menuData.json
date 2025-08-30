@@ -5,132 +5,150 @@
         "weather": ["cloudy", "sunny", "rainy", "snowy"],
         "temperature": ["cold", "hot"],
         "category": ["japanese", "korean", "chinese", "snack", "western"],
-        "src": "/src/assets/images/foods/natto.png"
+        "src": "/src/assets/images/foods/natto.webp"
     },
     {
         "id": 2,
         "name": "순두부찌개",
         "weather": ["cloudy", "rainy"],
         "temperature": ["cold"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/sundubu.webp"
     },
     {
         "id": 3,
         "name": "제육볶음",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/jeyuk.webp"
     },
     {
         "id": 4,
         "name": "찜닭",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/jjimdak.webp"
     },
     {
         "id": 5,
         "name": "냉면",
         "weather": ["sunny"],
         "temperature": ["hot"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/naengmyeon.webp"
     },
     {
         "id": 6,
         "name": "콩국수",
         "weather": ["sunny"],
         "temperature": ["hot"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/kongguksu.webp"
     },
     {
         "id": 7,
         "name": "냉우동",
         "weather": ["sunny"],
         "temperature": ["hot"],
-        "category": ["japanese", "korean"]
+        "category": ["japanese", "korean"],
+        "src": "/src/assets/images/foods/coldudon.webp"
     },
     {
         "id": 8,
         "name": "된장찌개",
         "weather": ["cloudy", "rainy"],
         "temperature": ["cold"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/doenjang.webp"
     },
     {
         "id": 9,
         "name": "김밥",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean", "snack"]
+        "category": ["korean", "snack"],
+        "src": "/src/assets/images/foods/kimbap.webp"
     },
     {
         "id": 10,
         "name": "돈까스",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["japanese", "korean", "snack"]
+        "category": ["japanese", "korean", "snack"],
+        "src": "/src/assets/images/foods/porkcutlet.webp"
     },
     {
         "id": 11,
         "name": "회덮밥",
         "weather": ["sunny", "cloudy"],
         "temperature": ["hot"],
-        "category": ["korean", "japanese"]
+        "category": ["korean", "japanese"],
+        "src": "/src/assets/images/foods/hoedeopbap.webp"
     },
     {
         "id": 12,
         "name": "치킨",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean", "snack"]
+        "category": ["korean", "snack"],
+        "src": "/src/assets/images/foods/chicken.webp"
     },
     {
         "id": 13,
         "name": "냉모밀",
         "weather": ["sunny"],
         "temperature": ["hot"],
-        "category": ["japanese"]
+        "category": ["japanese"],
+        "src": "/src/assets/images/foods/soba.webp"
     },
     {
         "id": 14,
         "name": "파전",
         "weather": ["rainy", "cloudy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean", "snack"]
+        "category": ["korean", "snack"],
+        "src": "/src/assets/images/foods/pajeon.webp"
     },
     {
         "id": 15,
         "name": "짬뽕",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["chinese", "korean"]
+        "category": ["chinese", "korean"],
+        "src": "/src/assets/images/foods/jjambbong.webp"
     },
     {
         "id": 16,
         "name": "우동",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["japanese"]
+        "category": ["japanese"],
+        "src": "/src/assets/images/foods/udon.webp"
     },
     {
         "id": 17,
         "name": "피자",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["snack", "western"]
+        "category": ["snack", "western"],
+        "src": "/src/assets/images/foods/pizza.webp"
     },
     {
         "id": 18,
         "name": "삼겹살",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["korean"]
+        "category": ["korean"],
+        "src": "/src/assets/images/foods/porkbelly.webp"
     },
     {
         "id": 19,
         "name": "햄버거",
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
-        "category": ["snack", "western"]
+        "category": ["snack", "western"],
+        "src": "/src/assets/images/foods/hamburger.webp"
     }
 ]
