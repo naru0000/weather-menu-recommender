@@ -18,7 +18,7 @@ function App() {
     return (
         <div className={`bg-cover bg-center ${backgroundImageClass}`}>
             <div
-                className={`min-h-screen w-full min-h-screen flex items-center justify-center py-10 bg-white/40 `}
+                className={`min-h-screen w-full flex items-center justify-center py-10 bg-white/40 `}
             >
                 <main className="container mx-auto flex flex-col items-center">
                     <Weather />

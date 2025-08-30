@@ -8,7 +8,6 @@ const WEATHER = [
 ]
 
 const weatherButtonColorClasses = {
-    
     null: 'text-white bg-weather-basic',
     sunny: 'text-white bg-weather-sunny',
     cloudy: 'text-white bg-weather-cloudy',
