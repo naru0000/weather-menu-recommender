@@ -5,6 +5,7 @@ const menuSlice = createSlice({
     name: 'menu',
     initialState: {
         random: null,
+        recommended: false,
     },
     reducers: {
         recommendedMenu: (state, action) => {
@@ -20,7 +21,9 @@ const menuSlice = createSlice({
             })
 
             const randomIndex = Math.floor(Math.random() * filtered.length)
-            state.random = filtered[randomIndex]
+            state.random = filtered[randomIndex] || null
+
+            state.recommended = true
         },
     },
 })
