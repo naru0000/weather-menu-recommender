@@ -4,19 +4,26 @@ import Menu from './features/components/MenuRecommender'
 import HistoryList from './features/components/HistoryList'
 import { useSelector } from 'react-redux'
 
-const backgroundClasses = {
-    null: 'bg-null',
-    sunny: 'bg-sunny',
-    cloudy: 'bg-cloudy',
-    rainy: 'bg-rainy',
+import basicBg from './assets/images/background/basic_pc.webp'
+import sunnyBg from './assets/images/background/sunny_pc.webp'
+import cloudyBg from './assets/images/background/cloudy_pc.webp'
+import rainyBg from './assets/images/background/rainny_pc.webp'
+
+const backgroundImages = {
+    sunny: sunnyBg,
+    cloudy: cloudyBg,
+    rainy: rainyBg,
 }
 
 function App() {
     const weather = useSelector((state) => state.weather.value)
-    const backgroundImageClass = backgroundClasses[weather]
+    const backgroundImageUrl = backgroundImages[weather] || basicBg
 
     return (
-        <div className={`bg-cover bg-center ${backgroundImageClass}`}>
+        <div
+            style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+            className="bg-cover bg-center"
+        >
             <div
                 className={`min-h-screen w-full flex items-center justify-center py-10 bg-white/40 `}
             >
