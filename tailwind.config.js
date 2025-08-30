@@ -9,9 +9,6 @@ export default {
                 'weather-sunny': '#006FD8',
                 'weather-rainy': '#0F7461',
             },
-            foodImages: {
-                낫또: "url('/src/assets/images/foods/natto.png')",
-            },
             fontFamily: {
                 cafe24: ['Cafe24ProUp', 'sans-serif'],
             },
