@@ -15,7 +15,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const weatherSlice = createSlice({
     name: 'weather',
-    initialState: { value: 'sunny' },
+    initialState: { value: null },
     reducers: {
         setWeather: (state, action) => {
             state.value = action.payload

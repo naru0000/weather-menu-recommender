@@ -1,7 +1,20 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { setWeather } from '../slice/weatherSlice'
 
-const WEATHER = ['rainy', 'cloudy', 'sunny']
+const WEATHER = [
+    { key: 'rainy', label: '비오는 날' },
+    { key: 'sunny', label: '맑은 날' },
+    { key: 'cloudy', label: '흐린 날' },
+]
+
+const weatherButtonColorClasses = {
+    
+    null: 'text-white bg-weather-basic',
+    sunny: 'text-white bg-weather-sunny',
+    cloudy: 'text-white bg-weather-cloudy',
+    rainy: 'text-white bg-weather-rainy',
+}
+
 function Weather() {
     const dispatch = useDispatch()
     const currentWeather = useSelector((state) => state.weather.value)
@@ -9,18 +22,18 @@ function Weather() {
     return (
         <div>
             <div>
-                {WEATHER.map((temp) => (
+                {WEATHER.map(({ key, label }) => (
                     <button
-                        key={temp}
-                        onClick={() => dispatch(setWeather(temp))}
-                        className={`p-2 px-4 m-1 border border-gray-300 rounded-full cursor-pointer transition-colors 
+                        key={key}
+                        onClick={() => dispatch(setWeather(key))}
+                        className={`p-2 px-4 m-1 border border-gray-300 rounded-full cursor-pointer transition-colors font-cafe24 
                             ${
-                                currentWeather === temp
-                                    ? 'bg-blue-500 text-white'
+                                currentWeather === key
+                                    ? weatherButtonColorClasses[key]
                                     : 'bg-white text-black'
                             }`}
                     >
-                        {temp}
+                        {label}
                     </button>
                 ))}
             </div>
