@@ -5,7 +5,7 @@
         "weather": ["cloudy", "sunny", "rainy", "snowy"],
         "temperature": ["cold", "hot"],
         "category": ["japanese", "korean", "chinese", "snack", "western"],
-        "src": "/src/assets/images/foods/natto.webp"
+        "src": "./images/foods/natto.webp"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "weather": ["cloudy", "rainy"],
         "temperature": ["cold"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/sundubu.webp"
+        "src": "./images/foods/sundubu.webp"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/jeyuk.webp"
+        "src": "./images/foods/jeyuk.webp"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/jjimdak.webp"
+        "src": "./images/foods/jjimdak.webp"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "weather": ["sunny"],
         "temperature": ["hot"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/naengmyeon.webp"
+        "src": "./images/foods/naengmyeon.webp"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "weather": ["sunny"],
         "temperature": ["hot"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/kongguksu.webp"
+        "src": "./images/foods/kongguksu.webp"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "weather": ["sunny"],
         "temperature": ["hot"],
         "category": ["japanese", "korean"],
-        "src": "/src/assets/images/foods/coldudon.webp"
+        "src": "./images/foods/coldudon.webp"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "weather": ["cloudy", "rainy"],
         "temperature": ["cold"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/doenjang.webp"
+        "src": "./images/foods/doenjang.webp"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["korean", "snack"],
-        "src": "/src/assets/images/foods/kimbap.webp"
+        "src": "./images/foods/kimbap.webp"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["japanese", "korean", "snack"],
-        "src": "/src/assets/images/foods/porkcutlet.webp"
+        "src": "./images/foods/porkcutlet.webp"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "weather": ["sunny", "cloudy"],
         "temperature": ["hot"],
         "category": ["korean", "japanese"],
-        "src": "/src/assets/images/foods/hoedeopbap.webp"
+        "src": "./images/foods/hoedeopbap.webp"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["korean", "snack"],
-        "src": "/src/assets/images/foods/chicken.webp"
+        "src": "./images/foods/chicken.webp"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "weather": ["sunny"],
         "temperature": ["hot"],
         "category": ["japanese"],
-        "src": "/src/assets/images/foods/soba.webp"
+        "src": "./images/foods/soba.webp"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "weather": ["rainy", "cloudy"],
         "temperature": ["cold", "hot"],
         "category": ["korean", "snack"],
-        "src": "/src/assets/images/foods/pajeon.webp"
+        "src": "./images/foods/pajeon.webp"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["chinese", "korean"],
-        "src": "/src/assets/images/foods/jjambbong.webp"
+        "src": "./images/foods/jjambbong.webp"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["japanese"],
-        "src": "/src/assets/images/foods/udon.webp"
+        "src": "./images/foods/udon.webp"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["snack", "western"],
-        "src": "/src/assets/images/foods/pizza.webp"
+        "src": "./images/foods/pizza.webp"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["korean"],
-        "src": "/src/assets/images/foods/porkbelly.webp"
+        "src": "./images/foods/porkbelly.webp"
     },
     {
         "id": 19,
@@ -149,6 +149,6 @@
         "weather": ["cloudy", "sunny", "rainy"],
         "temperature": ["cold", "hot"],
         "category": ["snack", "western"],
-        "src": "/src/assets/images/foods/hamburger.webp"
+        "src": "./images/foods/hamburger.webp"
     }
 ]
