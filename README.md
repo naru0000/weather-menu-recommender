@@ -154,16 +154,16 @@ weather-menu-recommender/
 ```javascript
 {
   weather: {
-    selected: null | 'cloudy' | 'rainy' | 'sunny'
+    value: null | 'cloudy' | 'rainy' | 'sunny'
   },
   temperature: {
-    selected: null | 'cold' | 'hot'  
+    value: null | 'cold' | 'hot'  
   },
   menu: {
-    currentRecommendation: null | { name, description, image }
+    random: null | object 
   },
   history: {
-    recommendations: [
+    items: [
       {
         id: string,
         menu: object,
@@ -181,7 +181,7 @@ weather-menu-recommender/
 - **`recommendMenu()`**: 메뉴 추천 실행
 - **`addToHistory(recommendation)`**: 히스토리에 추가
 - **`removeFromHistory(id)`**: 특정 기록 삭제
-- **`clearHistory()`**: 전체 히스토리 삭제
+- **`resetHistory()`**: 전체 히스토리 삭제
 
 <br />
 
@@ -195,13 +195,17 @@ weather-menu-recommender/
     "id": 1,
     "name": "낫또",
     "weather": ["cloudy", "sunny", "rainy", "snowy"],
-    "temperature": ["cold", "hot"]
+    "temperature": ["cold", "hot"],
+    "category": ["japanese", "korean", "chinese", "snack", "western"],
+    "src": "./images/foods/natto.webp"
   },
   {
     "id": 2,
     "name": "순두부찌개",
     "weather": ["cloudy", "rainy"],
-    "temperature": ["cold"]
+    "temperature": ["cold"],
+    "category": ["korean"],
+    "src": "./images/foods/sundubu.webp"
   }
 ]
 ```
